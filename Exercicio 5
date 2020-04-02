@@ -1,0 +1,45 @@
+<? php
+	class Imovel {
+	  public $ endereco;
+	  public preco;
+	}
+	class Novo amplia Imovel {
+	  public $ add;
+	  public function Novo ($ endere, $ pre) {
+	    $ this-> endereco = $ endere;
+	    $ this-> preco = $ pre;
+	  }
+	  public function setAdd () {
+	   $ this-> preco = $ this-> preco + (($ this-> preco * 25) / 100); 
+	}
+	public function getAdd () {
+	  eco "para cada imovel novo tem um aumento de 25% \ n";
+	}}
+	class Velho amplia Imovel {
+	  public $ des;
+	  public function Velho ($ endere, $ pre) {
+	    $ this-> endereco = $ endere;
+	    $ this-> preco = $ pre;
+	  }
+	  public function setdes () {
+	   $ this-> preco = $ this-> preco - (($ this-> preco * 15) / 100); 
+	}
+	public function getdes () {
+	  eco "para cada imovel antigo tem um desconto de 15% \ n";
+	}}
+	
+	$ imov1 = novo Novo ("Rua José de Alencar, número 2702", 5000);
+	$ imov1-> getAdd (); 
+	eco "Primeiro Imovel: (Novo) \ n";
+	eco "Endereço: {$ imvo1-> endereco} \ n";
+	eco "Preço: R $ {$ imvo1-> preco} \ n";
+	$ imvo1-> setAdd ();
+	echo "Preco com um adicional: {$ imvo1-> preco} \ n \ n";
+	$ imov2 = new Velho ("Rua Joaquim nabuco, 7845,", 6000);
+	$ imov2-> getdes (); 
+	eco "Segundo Imovel: (Velho) \ n";
+	eco "Endereço: {$ imov2-> endereco} \ n";
+	eco "Preço: R $ {$ imov2-> preco} \ n";
+	$ imov2-> setdes ();
+	echo "Preco com o desconto incluído: {$ imov2-> preco}";
+	?>
