@@ -1,0 +1,34 @@
+<? php
+	class Animal {
+	  public $ nome;
+	  public $ idade;
+	  public $ som;
+	  public $ ação;
+	}
+	Class Cachorro estende Animal {
+	public  function Cachorro ($ no, $ ida, $ s) {
+	    $ this-> nome = $ no;
+	    $ this-> idade = $ ida;
+	    $ this-> som = $ s;
+	    $ this-> acao = "correr";
+	
+	  }
+	}
+	Class Cavalo estende Animal {
+	   public function Cavalo ($ no, $ ida, $ s) {
+	    $ this-> nome = $ no;
+	    $ this-> idade = $ ida;
+	    $ this-> som = $ s;
+	    $ this-> acao = "correr";
+	
+	  }
+	}
+	Class Preguica estende Animal {
+	  public function Preguica ($ no, $ ida, $ s) {
+	    $ this-> nome = $ no;
+	    $ this-> idade = $ ida;
+	    $ this-> som = $ s;
+	    $ this-> acao = "subir em arvore";
+	  }
+	}
+	?>
